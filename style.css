@@ -74,10 +74,18 @@ section p span{
 label{
     font-weight: 700;
 }
-.email label:last-child{
+.email-check {
     color: var(--tomato);
-   
+    display: none;
 }
+.active{
+    display: block;
+}
+.invalid {
+    border: 1px solid var(--tomato); 
+    color: var(--tomato);
+    background-color: rgb(255, 222, 216);
+  }
 
 /*===================INPUT & BUTTON====================*/
 input{
