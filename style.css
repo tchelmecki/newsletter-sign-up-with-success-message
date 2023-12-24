@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --tomato: hsl(4, 100%, 67%)
+}
+body{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--charcoalGrey);
+}
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 50%;
+    height: 70svh;
+    background-color: var(--white);
+    border-radius: 40px;
+    display: flex;
+
+}
+
+
+
+/*========================SECTION========================*/
+section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    /* background-color: red; */
+    padding-left: 54px;
+    padding-right: 54px;
+}
+section p:first-child{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+section p:not(:first-child,:nth-child(2)){
+   display: flex;
+   align-items: center;
+   margin-bottom: 12px;
+
+}
+section p:nth-child(2){
+    margin-bottom: 30px;
+}
+section p:nth-child(5){
+    margin-bottom: 30px;
+}
+section p span{
+    margin-left: 15px;
+}
+/*=================EMAIL=====================*/
+.email{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    font-weight: 700;
+}
+.email label:last-child{
+    color: var(--tomato);
+   
+}
+
+/*===================INPUT & BUTTON====================*/
+input{
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid var(--grey);
+    font-size: 16px;
+    color: var(--grey);
+    padding-left: 20px;
+    margin: 10px 0 20px 0;
+}
+button{
+    height: 60px;
+    background-color: var(--darkSlateGrey);
+    color: var(--white);
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    transition: .3s ease-in-out all;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+
+/*=================ASIDE=====================*/
+aside{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-contaier{
+    width: 90%;
+    height: 92%;
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
