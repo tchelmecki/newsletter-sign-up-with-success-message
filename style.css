@@ -29,7 +29,6 @@ main{
     background-color: var(--white);
     border-radius: 40px;
     display: flex;
-
 }
 
 
@@ -85,7 +84,7 @@ label{
     border: 1px solid var(--tomato); 
     color: var(--tomato);
     background-color: rgb(255, 222, 216);
-  }
+}
 
 /*===================INPUT & BUTTON====================*/
 input{
@@ -129,4 +128,25 @@ aside{
     background-size: cover;
     background-position: center;
     border-radius: 30px;
+}
+
+
+
+/*===============SUCCESS-MESSAGE==============*/
+.success-message{
+    display: flex;
+    width: 30%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.success-message button{
+    width: 100%;
+}
+.success-message p:nth-child(2){
+    font-size: 60px;
+    font-weight: 700;
 }
