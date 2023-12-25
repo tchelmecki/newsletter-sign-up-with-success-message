@@ -7,18 +7,16 @@ const body = document.querySelector('body');
 
 function addElement(){
   const successDiv = document.createElement("div");
-  successDiv.className = 'success-message';
+  successDiv.className = 'success';
   const email = emailInput.value;
   successDiv.innerHTML = `
-  <div class="success-message">
-  <img src="assets/images/icon-success.svg">
-  <p>Thanks for subscribing!</p>
-  <p>A confirmation email has been sent to ${email}.com. 
+  <div class="img-container"></div>
+  <p> Thanks for subscribing!</p>
+  <p>A confirmation email has been sent to <b>${email}</b>. 
     Please open it and click the button inside to confirm your subscription.</p>
-  <button>Dismiss message</button>
-  </div>`;
-  body.appendChild(successDiv);
-
+  <button>Dismiss message</button>`;
+  successMessage.style.display = "flex";
+  successMessage.appendChild(successDiv);
 }
 
 function validateEmail() {

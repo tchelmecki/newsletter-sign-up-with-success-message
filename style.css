@@ -29,6 +29,7 @@ main{
     background-color: var(--white);
     border-radius: 40px;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -72,6 +73,7 @@ section p span{
 }
 label{
     font-weight: 700;
+
 }
 .email-check {
     color: var(--tomato);
@@ -84,7 +86,24 @@ label{
     border: 1px solid var(--tomato); 
     color: var(--tomato);
     background-color: rgb(255, 222, 216);
+    animation: shake 0.5s ease-in-out;
 }
+label:last-child{
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(5px);
+    }
+  }
+
 
 /*===================INPUT & BUTTON====================*/
 input{
@@ -134,19 +153,42 @@ aside{
 
 /*===============SUCCESS-MESSAGE==============*/
 .success-message{
-    display: flex;
+    display: none;
     width: 30%;
     height: 60%;
     border-radius: 30px;
     background-color: var(--white);
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    padding: 0px 70px 0 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.success-message button{
-    width: 100%;
+
+.img-container{
+    height: 70px;
+    background-repeat: no-repeat;
+    background-image: url(assets/images/icon-success.svg);
+    margin-bottom: 30px;
 }
 .success-message p:nth-child(2){
+    display: flex;
     font-size: 60px;
     font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+.success-message p:nth-child(3){
+    line-height: 25px;
+}
+.success-message button{
+    margin-top: 30px;
+    width: 100%;
+}
+.attribution{
+    margin-top: 30px;
+    color: var(--white);
+}
+.attribution a{
+    color: var(--tomato);
 }
