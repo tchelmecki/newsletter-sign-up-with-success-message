@@ -192,3 +192,103 @@ aside{
 .attribution a{
     color: var(--tomato);
 }
+
+
+
+/*============MEDIA-QUERY===================*/
+@media only screen and (width< 1600px){
+    section p:first-child{
+        font-size: 30px;
+    }
+    section p:nth-child(2), section p:nth-child(3),
+    section p:nth-child(4), section p:nth-child(5)
+    {
+        font-size: 14px;
+    }
+    button,input{
+        font-size: 14px;
+    }
+    main{
+        width: 60%;
+        height: 70svh;
+        
+    }
+}
+
+@media only screen and (width< 1100px){
+    main{
+        width: 70%;
+        height: 70svh;
+        
+    }
+}
+
+@media only screen and (width<= 450px){
+    main{
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    section{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        /* background-color: red; */
+        padding: 0 15px 0 15px;
+    }
+
+    /* button{
+        height: 200px;
+    } */
+    section p:first-child{
+        font-size: 40px;
+    }
+
+    /*=================ASIDE=====================*/
+    aside{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .img-contaier{
+        width: 100%;
+        height: 92%;
+        background-image: url(assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top: 0;
+
+    }
+    .attribution{
+        display: none;
+    }
+
+    /*===============SUCCESS-MESSAGE==============*/
+    .success-message{
+        display: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        background-color: var(--white);
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        padding: 0px 20px 0 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: relative;
+    }
+
+    button{
+        position: relative;
+        bottom: 0;
+    }
+}
